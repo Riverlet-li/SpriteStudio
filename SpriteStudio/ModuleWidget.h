@@ -12,5 +12,8 @@ public:
     ~ModuleWidget();
 
 private:
+    void CreateTable();
+
     Ui::ModuleWidget ui;
+    QStandardItemModel *tableModel;
 };

@@ -13,17 +13,14 @@
   <property name="windowTitle">
    <string>ModuleWidget</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>160</y>
-     <width>241</width>
-     <height>151</height>
+     <x>0</x>
+     <y>0</y>
+     <width>441</width>
+     <height>571</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>This is Module Widget</string>
    </property>
   </widget>
  </widget>

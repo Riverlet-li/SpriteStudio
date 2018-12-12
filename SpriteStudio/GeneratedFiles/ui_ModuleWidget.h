@@ -14,7 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,16 +22,16 @@ QT_BEGIN_NAMESPACE
 class Ui_ModuleWidget
 {
 public:
-    QLabel *label;
+    QTableView *tableView;
 
     void setupUi(QWidget *ModuleWidget)
     {
         if (ModuleWidget->objectName().isEmpty())
             ModuleWidget->setObjectName(QStringLiteral("ModuleWidget"));
         ModuleWidget->resize(1000, 630);
-        label = new QLabel(ModuleWidget);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(310, 160, 241, 151));
+        tableView = new QTableView(ModuleWidget);
+        tableView->setObjectName(QStringLiteral("tableView"));
+        tableView->setGeometry(QRect(0, 0, 441, 571));
 
         retranslateUi(ModuleWidget);
 
@@ -41,7 +41,6 @@ public:
     void retranslateUi(QWidget *ModuleWidget)
     {
         ModuleWidget->setWindowTitle(QApplication::translate("ModuleWidget", "ModuleWidget", Q_NULLPTR));
-        label->setText(QApplication::translate("ModuleWidget", "This is Module Widget", Q_NULLPTR));
     } // retranslateUi
 
 };
