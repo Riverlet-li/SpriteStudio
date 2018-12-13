@@ -46,6 +46,6 @@ void ModuleWidget::CreateTable()
     ui.tableView->setContextMenuPolicy(Qt::CustomContextMenu);
 
     // ÕûÐÐÑ¡Ôñ
-    //ui.tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui.tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
 }
 
