@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'SpriteStudio.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.3
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -33,6 +33,7 @@ public:
     QAction *actionSave;
     QAction *actionSaveAs;
     QAction *actionExit;
+    QAction *actionAbout;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tabModule;
@@ -72,6 +73,8 @@ public:
         actionSaveAs->setIcon(icon2);
         actionExit = new QAction(SpriteStudioClass);
         actionExit->setObjectName(QStringLiteral("actionExit"));
+        actionAbout = new QAction(SpriteStudioClass);
+        actionAbout->setObjectName(QStringLiteral("actionAbout"));
         centralWidget = new QWidget(SpriteStudioClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -126,6 +129,7 @@ public:
         menu->addAction(actionSaveAs);
         menu->addSeparator();
         menu->addAction(actionExit);
+        menu_A->addAction(actionAbout);
         mainToolBar->addAction(actionNew);
         mainToolBar->addAction(actionOpen);
         mainToolBar->addAction(actionSave);
@@ -147,6 +151,7 @@ public:
         actionSave->setText(QApplication::translate("SpriteStudioClass", "Save(&S)", Q_NULLPTR));
         actionSaveAs->setText(QApplication::translate("SpriteStudioClass", "Save As", Q_NULLPTR));
         actionExit->setText(QApplication::translate("SpriteStudioClass", "Exit(&X)", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("SpriteStudioClass", "About", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabModule), QApplication::translate("SpriteStudioClass", "Module", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabSprite), QApplication::translate("SpriteStudioClass", "Sprite", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tabAnimation), QApplication::translate("SpriteStudioClass", "Animation", Q_NULLPTR));
