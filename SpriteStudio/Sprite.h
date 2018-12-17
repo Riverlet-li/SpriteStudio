@@ -12,4 +12,9 @@ public:
 
 public:
 	void init();
+	void parseJson(const QFile & file);
+	void savejson(QFile & file);
+
+private:
+	QString _filePath;
 };

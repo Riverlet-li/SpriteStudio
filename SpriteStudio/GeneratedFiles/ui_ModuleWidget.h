@@ -31,7 +31,7 @@ public:
         ModuleWidget->resize(1000, 630);
         tableView = new QTableView(ModuleWidget);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(0, 0, 441, 571));
+        tableView->setGeometry(QRect(0, 0, 441, 621));
 
         retranslateUi(ModuleWidget);
 

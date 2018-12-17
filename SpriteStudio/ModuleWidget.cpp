@@ -19,7 +19,7 @@ void ModuleWidget::CreateTable()
 
     // table model
     tableModel->setRowCount(6);
-    tableModel->setRowCount(20);
+    tableModel->setRowCount(10);
     tableModel->setHorizontalHeaderItem(0, new QStandardItem(QObject::tr("Id")));
     tableModel->setHorizontalHeaderItem(1, new QStandardItem(QObject::tr("X")));
     tableModel->setHorizontalHeaderItem(2, new QStandardItem(QObject::tr("Y")));

@@ -156,8 +156,8 @@ void SpriteStudio::loadFile(const QString &fileName)
 #ifndef QT_NO_CURSOR
 	QApplication::setOverrideCursor(Qt::WaitCursor);
 #endif
-
-	//TODO:load file
+	_sprite->init();
+	_sprite->parseJson(file);
 
 #ifndef QT_NO_CURSOR
 	QApplication::restoreOverrideCursor();
@@ -182,7 +182,7 @@ bool SpriteStudio::saveFile(const QString &fileName)
 	QApplication::setOverrideCursor(Qt::WaitCursor);
 #endif
 	
-	//TODO:save file
+	_sprite->savejson(file);
 
 #ifndef QT_NO_CURSOR
 	QApplication::restoreOverrideCursor();

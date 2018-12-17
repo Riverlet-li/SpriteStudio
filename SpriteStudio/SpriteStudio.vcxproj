@@ -121,6 +121,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AnimationWidget.cpp" />
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ModuleWidget.cpp" />
     <ClCompile Include="Sprite.cpp" />
@@ -174,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SpriteStudio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprites\test.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

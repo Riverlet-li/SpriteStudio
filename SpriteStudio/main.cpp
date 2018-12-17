@@ -2,9 +2,14 @@
 #include "SpriteStudio.h"
 #include <QtWidgets/QApplication>
 
+void outputMessage(QtMsgType type, const QMessageLogContext &context, const QString &msg);
+
 int main(int argc, char *argv[])
 {
 	Q_INIT_RESOURCE(SpriteStudio);
+
+	qInstallMessageHandler(outputMessage);
+	qInfo("---------------------------Start-------------------------------");
 
 	QApplication app(argc, argv);
 	QCoreApplication::setOrganizationName("PWRD");
